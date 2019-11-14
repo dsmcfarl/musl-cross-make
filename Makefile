@@ -28,7 +28,7 @@ MUSL_RISC = https://github.com/riscv/riscv-musl
 
 LINUX_SITE = https://cdn.kernel.org/pub/linux/kernel
 
-DL_CMD = curl -so
+DL_CMD = curl -sLo
 
 HOST = $(if $(NATIVE),$(TARGET))
 BUILD_DIR = build/$(if $(HOST),$(HOST),local)/$(TARGET)
